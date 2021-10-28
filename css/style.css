@@ -143,10 +143,11 @@ nav a {
 
 .icon__add {
   position: absolute;
-  top: -13px;
-  left: 94px;
-  font-size: 35px;
-  color: #1abc9c;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    color: #1abc9c;
 }
 
 .margin-icon {
@@ -279,9 +280,11 @@ nav a {
   margin-right: 10px;
 }
 
-.comment__respond {
+
+.comment__respond--1 {
+  margin-left: 40px;
   width: 85%;
-  margin-left: 15%;
+  position: relative;
 }
 
 .general__comment {
@@ -307,9 +310,6 @@ nav a {
   top: -10px;
 }
 
-.comment__respond--1 {
-  position: relative;
-}
 
 .comment__respond--2 {
   width: 80%;
@@ -545,15 +545,9 @@ nav a {
     width: 30%;
   }
 
-  .comment__respond {
-    margin-left: 9%;
-  }
   .comment__line--vertical {
     height: calc(100% - 120px);
   }
-  .icon__add {
-    left: 93px;
-  } 
 }
 
 /* Tablet : 740px <= width <= 1024px */
@@ -593,16 +587,9 @@ nav a {
     width: 30%;
   }
 
-  .comment__respond {
-    margin-left: 9%;
-  }
   .comment__line--vertical {
     height: calc(100% - 120px);
   }
-  .icon__add {
-    left: 93px;
-  } 
-
 }
 
 /* PC : width >= 1024px */
@@ -654,13 +641,47 @@ nav a {
     margin-right: 6px;
   }
 
-  .icon__add{
-    top: -6px;
-    left: 64px;
-    font-size: 20px;
+  .icon__add {
+    font-size: 25px;
   }
+
   .general .general__classCode i{
     font-size: 8px;
+  }
+
+  .general__comment--show {
+    font-size: 8px;
+  }
+
+  .comment__line--vertical {
+    height: calc(100% - 245px);
+  }
+
+  .comment__line--horizontal {
+    height: 90px;
+    top: -70px;
+  }
+
+  .comment__respond--2 {
+    width: 70%;
+  }
+
+  .general__lecturers .general__lecturers--handle input {
+    width: 35%;
+  }
+
+  .general__lecturers .general__lecturers--handle p {
+    margin: 0 15%;
+  }
+
+  .list__toolbar {
+    width: 18px;
+    top: 62px;
+    left: 25px;
+  }
+
+  .list input {
+    padding-left: 35px;
   }
 }
 
