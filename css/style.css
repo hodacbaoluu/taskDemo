@@ -606,8 +606,62 @@ nav a {
 }
 
 /* PC : width >= 1024px */
-@media only screen and (min-width: 1024px) {
-  
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .lecturers--info--detail {
+    width: 65%;
+    margin-left: 0;
+  }
+  .general__lecturers .general__lecturers--info .lecturers--info .lecturers--info--img img {
+    width: 65px;
+    height: 65px;
+  }
+  .info--detail--scores p, .info--detail--scores span{
+    font-size: 15px;
+  }
+
+  .info--detail--handle button{
+    padding: 5px 10px;
+  }
+
+  .general .general__classCode .general__classCode--detail p:first-child {
+    font-size: 13px;
+  }
+
+  .general .general__classCode .general__classCode--detail p:last-child span {
+    font-size: 8px;
+    margin: 0 5px;
+  }
+  .general .general__schedule .general__schedule--detail p {
+    font-size: 8px;
+  }
+
+  .general__schedule .general__detail--credit .detail--credit p, .general__schedule .general__detail--credit .detail--credit u {
+    font-size: 9px;
+  }
+
+  .list .list__code {
+    font-size: 8px;
+  }
+
+  .icon__button {
+    top: 5px;
+  }
+  .icon__button--left , .icon__button--right{
+    margin-left: 14px;
+    font-size: 12px;
+  }
+  .margin-icon {
+    margin-right: 6px;
+  }
+
+  .icon__add{
+    top: -6px;
+    left: 64px;
+    font-size: 20px;
+  }
+  .general .general__classCode i{
+    font-size: 8px;
+  }
 }
 
 
