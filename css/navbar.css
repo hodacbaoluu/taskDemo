@@ -1,0 +1,26 @@
+.navbar ul {
+    display: flex;
+    font-size: 18px;
+}
+
+.navbar li {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.header__nav-li-clicked {
+    color: #00867b;
+    padding: 2rem 8rem;
+    background-color: #f5f7fc;
+    border-radius: 10px 10px 0 0;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px 0px 6px #ffffff;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 508px) {
+    .navbar li {
+      padding: 5px 10px;
+    }
+}

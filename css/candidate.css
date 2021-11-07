@@ -1,0 +1,206 @@
+.candidate {
+  width: 60%;
+  padding-right: 15px;
+}
+
+.candidate .flex {
+  justify-content: space-between;
+}
+
+.candidate-head .list__search-box {
+  flex-basis: 30%;
+}
+
+.candidate-head > i {
+  color: var(--color-btn-add-user);
+  font-size: 2rem;
+  cursor: pointer;
+  color: purple;
+  width: fit-content;
+  display: flex;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+.candidate-head > i:hover {
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  color: #e04b93;
+}
+
+.candidate-head span {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.candidate-head select {
+  flex-basis: 15%;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.candidate--info {
+  background-color: #f652a10e;
+  border-radius: 20px;
+  padding: 17px;
+  position: relative;
+  border: 1px solid #a6b3b4;
+  overflow: hidden;
+  box-shadow: 3px 4px var(--color-silver);
+  margin-top: 20px;
+}
+
+.candidate--info--avt {
+  flex-basis: 15%;
+}
+
+.candidate--info--avt img {
+  border-radius: 50%;
+  width: 8rem;
+}
+
+.candidate--info--content {
+  flex-basis: 60%;
+}
+
+.candidate--info--exp {
+  flex-basis: 12%;
+}
+
+.candidate--info--btn {
+  flex-basis: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* css chi tiết cho từng thành phần của ứng viên*/
+
+.candidate--info--bottom,
+.candidate--info--bottom--icon {
+  display: flex;
+  align-items: center;
+}
+
+.candidate--info--bottom--icon {
+  flex-basis: 20%;
+}
+
+.candidate--info--bottom--icon span:nth-child(2),
+.candidate--info--bottom--icon span:nth-child(3),
+.candidate--info--bottom--icon span:nth-child(4) {
+  line-height: 10px;
+}
+
+.candidate--info--bottom--icon img {
+  width: 30px;
+}
+
+.candidate--info--bottom--text {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.candidate--info--bottom--create {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.info-nd-line,
+.info-rd-line,
+.info-th-line,
+.info-st-line--bir {
+  color: var(--color-silver);
+  font-size: 13px;
+}
+
+.info-st-line--address,
+.info-st-line--skill {
+  font-size: 13px;
+}
+
+.info-st-line--sex {
+  margin: 10px;
+  color: rgb(241, 0, 101);
+}
+
+.info-st-line--bir,
+.info-st-line--address {
+  margin-right: 15px;
+}
+
+.info-st-line--skill {
+  color: #00867b;
+}
+
+.info-rd-line {
+  display: flex;
+}
+
+.info-rd-line span {
+  padding: 5px 10px;
+  margin: 0 10px;
+  background-color: #f0f5f7;
+  border-radius: 20px;
+}
+
+.candidate--info--exp-rate {
+  font-size: 20px;
+  font-weight: 500 !important;
+}
+
+.candidate--info--exp i {
+  font-size: 15px;
+  /* font-weight: 500 !important; */
+  color: #1967d2;
+}
+
+.candidate--info--hr {
+  width: 60%;
+  margin: 10px 0;
+}
+
+.candidate--info--exp-note {
+  color: rgba(202, 129, 46, 0.966);
+  font-size: 20px;
+}
+
+.candidate--info--btn a:hover {
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  cursor: pointer;
+}
+
+/* STT CỦA ỨNG VIÊN */
+.candidate--info--stt {
+  position: absolute;
+  top: 0;
+  padding: 10px 12px;
+  left: 0px;
+  background-color: var(--background-color-primary);
+  font-size: 20px;
+}
+
+/* responsive */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .candidate {
+    flex-basis: 100%;
+    padding: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  .candidate {
+    flex-basis: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 508px) {
+  .candidate .flex {
+    flex-wrap: wrap;
+  }
+  .candidate--info--bottom {
+    flex-direction: column;
+  }
+}

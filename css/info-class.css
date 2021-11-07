@@ -1,0 +1,156 @@
+.info-class {
+  flex: 22%;
+  background-color: #21d3c436;
+  padding: 30px 15px 10px;
+  border-radius: 30px;
+  box-shadow: -4px 4px 5px 0px #99a3ad;
+}
+
+.info-class > .flex {
+  justify-content: flex-start;
+  column-gap: 20%;
+}
+
+.head-info h3 {
+  color: #00867b;
+}
+
+.head-info > .flex {
+  justify-content: flex-start;
+  column-gap: 20px;
+}
+
+.body-info {
+  margin: 20px 0;
+}
+
+.body-info .flex {
+  justify-content: flex-start;
+  align-items: baseline;
+  column-gap: 5px;
+  margin: 10px 0;
+}
+
+.body-info .flex i {
+  flex-basis: 20%;
+  font-size: 20px;
+}
+
+.body-info .flex h3 {
+  flex-basis: 80%;
+}
+
+.body-info-fee {
+  background-color: #ffffff7a;
+  border-radius: 20px;
+  padding: 15px 10px;
+  line-height: 35px;
+}
+
+.body-info-coms {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-silver);
+}
+
+.body-info-coms span i {
+  margin: 0 10px;
+}
+
+/* comment css */
+
+.general__coms--inc {
+  display: flex;
+  column-gap: 10px;
+  position: relative;
+}
+
+.general__coms--res {
+  margin-left: calc(0px + 40px + 6px);
+}
+
+.line-mid::after {
+  content: "";
+  border-left: 1px solid #acacac;
+  height: 100%;
+  position: absolute;
+  left: calc(0px - (1 / 2 * 40px + 6px + 3px));
+  top: 0;
+}
+
+.line-l::after {
+  content: "";
+  border-left: 1px solid #acacac;
+  border-bottom: 1px solid #acacac;
+  border-radius: 0 0 0 15px;
+  height: 40%;
+  width: calc(1 / 2 * 40px);
+  position: absolute;
+  left: calc(0px - (1 / 2 * 40px + 6px + 3px));
+  top: calc(0px - 1 / 2 * 40px - 3px);
+}
+
+.coms--avt img {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+}
+
+.line-coms-head::after {
+  content: "";
+  border-left: 1px solid #acacac;
+  height: calc(100% - 40px);
+  position: absolute;
+  top: calc(40px + 3px);
+  left: calc(1 / 2 * 40px - 3px);
+}
+
+.coms-rev {
+  position: relative;
+}
+
+.color-text-info {
+  color: #7a7a7a;
+}
+.coms--text {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+.coms--text--bottom {
+  display: flex;
+  font-size: 0.6rem;
+  justify-content: space-evenly;
+}
+
+.coms--text-name {
+  font-size: 1rem;
+}
+
+/* responsive */
+@media only screen and (min-width: 1024px) {
+  .head-info > .flex {
+    column-gap: 0;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .info-class {
+    flex-basis: 50%;
+    margin: 0 20px;
+  }
+
+  .info-class > .flex {
+    column-gap: 40%;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  .info-class {
+    flex-basis: 90%;
+    margin: 20px;
+  }
+}
